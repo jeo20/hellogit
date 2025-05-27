@@ -84,15 +84,27 @@ LECCIONES DEL CURSO:
     4 git log --pretty=oneline
     5 git log --decorate
     6 git log --graph --pretty=oneline --decorate
-    
+
     git checkout nombre_archivo (se usa para volver al estado anterior)
     git reset (vuelve a la  ultima foto del estado)
 
+    git log --graph --decorate --all --oneline (resumido)
+
+
 01:03:02 | 11 - "git alias"
+
+    1 git config
+    2 git config --global alias.tree '<comando>'
+    3 git tree
+
     git alias (permite crear atajos personalizados (alias) para comandos de Git que usas con frecuencia)
     git config --global alias.tree "log --graph --decorate --all --oneline"
+    git tree (ejectua "log --graph --decorate --all --oneline")
 
 01:05:05 | 12 - Fichero .gitignore
+    1 touch .gitignore
+    2 git add .gitignore
+    
     El archivo .gitignore en Git es un archivo de texto plano que le dice a Git
     qué archivos y directorios debe ignorar intencionalmente en tu proyecto.
     En otras palabras, los archivos y directorios listados en .gitignore no serán rastreados por Git, 
