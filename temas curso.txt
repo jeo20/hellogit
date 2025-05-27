@@ -1,0 +1,120 @@
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/jeo20/git-moure.git
+git push -u origin main
+
+
+LECCIONES DEL CURSO:
+00:00:00 | Introducción
+00:03:15 | 1 - Introducción a Git
+00:10:21 | 2 - Historia de Git
+00:14:35 | 3 - Instalación de Git
+    git --version o git-v (comprobar la version instalada de git)
+    git help git (comando ayuda git)
+	
+00:24:00 | 4 - Comandos básicos de la terminal
+    1 ls
+    2 cd <directorio>
+    3 cd ..
+    4 pwd
+    5 mkdir <nombre>
+    6 touch <nombre>
+    7 rm <nombre>
+    8 cp <nombre> <directorio>
+    9 mv <nombre> <directorio>
+
+00:30:13 | 5 - Configuración de Git
+	windows (C:\Users\jorge\.gitconfig)
+	git config --global user.name "Jorge Orellana" (configuracion global y no por proyecto individual)
+	git config --global user.email jeo20@hotmail.com (defino el correo electronico para git)
+	
+00:36:47 | 6 - "git init"
+    git init (inicializa el repositorio local)
+
+00:42:23 | 7 - Ramas en Git
+    git config --global init.defaultBranch main
+    git branch -m main
+
+00:45:21 | 8 - "git add" y "git commit"
+    Git tiene tres estados principales en los que se pueden encontrar tus archivos: 
+    confirmado (committed), modificado (modified), y preparado (staged). 
+    Confirmado(Committed): significa que los datos están almacenados de manera segura en tu base de datos local. 
+    Modificado(Modified): significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos. 
+    Preparado(Staged): significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.
+
+    1 git status
+    2 git add <archivo>
+    3 git add .
+    4 git commit -m "<mensaje>"
+    
+    git add nombre_archivo (seleccionamos a los archivos que pasan a la etapa STAGE que es una etapa intermedia antes de subir al repositorio y suben solo cambios que seleccionemos)
+    git commit -m "nombre del commit" (guarda una foto de los archivos seleccionados con git add)
+    [main (root-commit) f3582be] primer commit (f3582be es el hash correspondiente al commit)
+
+00:53:27 | 9 - "git log" y "git status"
+    git log (se utiliza para mostrar el historial de commits)
+        commit f3582be58045582d86c40edc989273ee4f93080c (HEAD -> main)
+        Author: jeo20 <jeo20@hotmail.com>
+        Date:   Wed May 7 11:28:07 2025 -0300
+
+            primer commit
+            
+    git status (muestra el estado actual del repositorio)
+
+00:57:48 | 10 - "git checkout" y "git reset"
+    git checkout nombre_archivo (se usa para volver al estado anterior)
+    git reset (vuelve a la  ultima foto del estado)
+
+01:03:02 | 11 - "git alias"
+    git alias (permite crear atajos personalizados (alias) para comandos de Git que usas con frecuencia)
+    git config --global alias.tree "log --graph --decorate --all --oneline"
+
+01:05:05 | 12 - Fichero .gitignore
+    El archivo .gitignore en Git es un archivo de texto plano que le dice a Git
+    qué archivos y directorios debe ignorar intencionalmente en tu proyecto.
+    En otras palabras, los archivos y directorios listados en .gitignore no serán rastreados por Git, 
+    lo que significa que no se incluirán en tus commits ni se mostrarán como archivos sin seguimiento
+    
+01:09:04 | 13 - "git diff"
+    git diff te muestra exactamente qué líneas agregaste, qué líneas borraste y qué líneas cambiaron
+
+01:11:54 | 14 - Desplazamiento en una rama
+
+01:19:31 | 15 - "git reset --hard" y "git reflog"
+
+01:27:37 | 16 - "git tag"
+
+01:37:36 | 17 - "git branch" y "git switch"
+
+01:49:06 | 18 - "git merge"
+
+01:54:29 | 19 - Resolución de conflictos en Git
+02:03:42 | 20 - "git stash"
+02:10:11 | 21 - Reintegración de ramas en Git
+02:16:26 | 22 - Eliminación de ramas en Git
+02:22:27 | 23 - Introducción a GitHub
+02:27:53 | 24 - Primeros pasos en GitHub
+02:30:39 | 25 - Repositorio personal
+02:42:40 | 26 - Local y Remoto
+02:47:32 | 27 - Autenticación SSH en GitHub
+03:00:45 | 28 - Repositorio proyecto
+03:02:29 | 29 - "git remote"
+03:07:19 | 30 - Subida de un proyecto a GitHub
+03:11:31 | 31 - "git fetch" y "git pull"
+03:16:41 | 32 - "git clone"
+03:19:55 | 33 - "git push"
+03:21:31 | 34 - "Fork" en GitHub
+03:27:02 | 35 - Flujo colaborativo en GitHub
+03:30:46 | 36 - "Pull Request (PR)" en GitHub
+03:35:30 | 37 - Ejercicio práctico
+03:37:41 | 38 - Resolución de conflictos en Pull Requests
+03:53:31 | 39 - Sincronización de un Fork en GitHub
+03:56:53 | 40 - Markdown en GitHub
+04:00:37 | 41 - Herramientas gráficas (GUI) para Git y GitHub
+04:18:36 | 42 - Git y GitHub "flow"
+04:35:15 | 43 - Ejemplo Gitflow
+04:52:49 | 44 - "git cherry-pick" y "git rebase"
+05:00:05 | 45 - GitHub Pages Y Actions
+05:04:24 | Próximos pasos
