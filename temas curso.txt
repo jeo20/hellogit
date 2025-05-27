@@ -48,22 +48,43 @@ LECCIONES DEL CURSO:
     2 git add <archivo>
     3 git add .
     4 git commit -m "<mensaje>"
-    
+
     git add nombre_archivo (seleccionamos a los archivos que pasan a la etapa STAGE que es una etapa intermedia antes de subir al repositorio y suben solo cambios que seleccionemos)
     git commit -m "nombre del commit" (guarda una foto de los archivos seleccionados con git add)
-    [main (root-commit) f3582be] primer commit (f3582be es el hash correspondiente al commit)
+    [main (root-commit) 03bbd35] Este es mi primer commit (03bbd35 es el hash(40 caracteres) correspondiente al commit)
 
 00:53:27 | 9 - "git log" y "git status"
     git log (se utiliza para mostrar el historial de commits)
-        commit f3582be58045582d86c40edc989273ee4f93080c (HEAD -> main)
+        commit 03bbd35bbf8deeb6e45d0d25a22139627269a7b7 (HEAD -> main)
         Author: jeo20 <jeo20@hotmail.com>
-        Date:   Wed May 7 11:28:07 2025 -0300
+        Date:   Tue May 27 13:34:51 2025 -0300
 
-            primer commit
+            Este es mi primer commit
+
             
     git status (muestra el estado actual del repositorio)
+        commit 312ba29f943ef0c96653af2d4ddf35ae47e9149e (HEAD -> main)
+        Author: jeo20 <jeo20@hotmail.com>
+        Date:   Tue May 27 13:52:03 2025 -0300
+
+            Este es mi segundo commit
+
+        commit 03bbd35bbf8deeb6e45d0d25a22139627269a7b7
+        Author: jeo20 <jeo20@hotmail.com>
+        Date:   Tue May 27 13:34:51 2025 -0300
+
+            Este es mi primer commit
+
 
 00:57:48 | 10 - "git checkout" y "git reset"
+
+    1 git checkout <archivo>
+    2 git reset
+    3 git log --graph
+    4 git log --pretty=oneline
+    5 git log --decorate
+    6 git log --graph --pretty=oneline --decorate
+    
     git checkout nombre_archivo (se usa para volver al estado anterior)
     git reset (vuelve a la  ultima foto del estado)
 
