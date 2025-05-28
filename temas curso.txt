@@ -25,19 +25,19 @@ LECCIONES DEL CURSO:
     8 cp <nombre> <directorio>
     9 mv <nombre> <directorio>
 
-00:30:13 | 5 - Configuración de Git
+00:30:13 | 5 - Configuración de Git (Configuración)
 	windows (C:\Users\jorge\.gitconfig)
 	git config --global user.name "Jorge Orellana" (configuracion global y no por proyecto individual)
 	git config --global user.email jeo20@hotmail.com (defino el correo electronico para git)
 	
-00:36:47 | 6 - "git init"
+00:36:47 | 6 - "git init" ( Inicialización de un repositorio)
     git init (inicializa el repositorio local)
 
 00:42:23 | 7 - Ramas en Git
     git config --global init.defaultBranch main
     git branch -m main
 
-00:45:21 | 8 - "git add" y "git commit"
+00:45:21 | 8 - "git add" y "git commit" (Guardado)
     Git tiene tres estados principales en los que se pueden encontrar tus archivos: 
     confirmado (committed), modificado (modified), y preparado (staged). 
     Confirmado(Committed): significa que los datos están almacenados de manera segura en tu base de datos local. 
@@ -53,7 +53,8 @@ LECCIONES DEL CURSO:
     git commit -m "nombre del commit" (guarda una foto de los archivos seleccionados con git add)
     [main (root-commit) 03bbd35] Este es mi primer commit (03bbd35 es el hash(40 caracteres) correspondiente al commit)
 
-00:53:27 | 9 - "git log" y "git status"
+
+00:53:27 | 9 - "git log" y "git status" (Estado)
     git log (se utiliza para mostrar el historial de commits)
         commit 03bbd35bbf8deeb6e45d0d25a22139627269a7b7 (HEAD -> main)
         Author: jeo20 <jeo20@hotmail.com>
@@ -76,7 +77,7 @@ LECCIONES DEL CURSO:
             Este es mi primer commit
 
 
-00:57:48 | 10 - "git checkout" y "git reset"
+00:57:48 | 10 - "git checkout" y "git reset"(Operaciones con ramas)
 
     1 git checkout <archivo>
     2 git reset
@@ -101,7 +102,7 @@ LECCIONES DEL CURSO:
     git config --global alias.tree "log --graph --decorate --all --oneline"
     git tree (ejectua "log --graph --decorate --all --oneline")
 
-01:05:05 | 12 - Fichero .gitignore
+01:05:05 | 12 - Fichero .gitignore (Ignorar ficheros)
     1 touch .gitignore
     2 git add .gitignore
     
@@ -110,10 +111,23 @@ LECCIONES DEL CURSO:
     En otras palabras, los archivos y directorios listados en .gitignore no serán rastreados por Git, 
     lo que significa que no se incluirán en tus commits ni se mostrarán como archivos sin seguimiento
     
-01:09:04 | 13 - "git diff"
+01:09:04 | 13 - "git diff" (Comparación de commits)
+    1 git diff
+    2 git diff <hash_commit_a> <hash_commit_b>
+    3 git diff --name-only <hash_commit_a> <hash_commit_b>
+
     git diff te muestra exactamente qué líneas agregaste, qué líneas borraste y qué líneas cambiaron
+    diff --git a/hellogit.py b/hellogit.py        
+    index 8ba5e06..4aa9575 100644
+    --- a/hellogit.py
+    +++ b/hellogit.py
+    @@ -1 +1 @@
+    -print("Hola Git!")
+    +print("New Hello Git with changes")
 
 01:11:54 | 14 - Desplazamiento en una rama
+    1 git checkout <hash>
+    2 git checkout HEAD -- .
 
 01:19:31 | 15 - "git reset --hard" y "git reflog"
 
@@ -124,9 +138,13 @@ LECCIONES DEL CURSO:
 01:49:06 | 18 - "git merge"
 
 01:54:29 | 19 - Resolución de conflictos en Git
+
 02:03:42 | 20 - "git stash"
+
 02:10:11 | 21 - Reintegración de ramas en Git
+
 02:16:26 | 22 - Eliminación de ramas en Git
+
 02:22:27 | 23 - Introducción a GitHub
 02:27:53 | 24 - Primeros pasos en GitHub
 02:30:39 | 25 - Repositorio personal
