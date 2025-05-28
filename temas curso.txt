@@ -157,7 +157,7 @@ LECCIONES DEL CURSO:
     2 git merge --theirs <archivo>
     3 git merge --mine (o --ours) <archivo>
 
-02:03:42 | 20 - "git stash"
+02:03:42 | 20 - "git stash" (Cambios temporales)
     1 git stash
     2 git stash pop
     3 git stash apply
