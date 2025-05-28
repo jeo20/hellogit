@@ -153,10 +153,21 @@ LECCIONES DEL CURSO:
     1 git merge <nombre_rama>
 
 01:54:29 | 19 - Resolución de conflictos en Git
+    1 git diff
+    2 git merge --theirs <archivo>
+    3 git merge --mine (o --ours) <archivo>
 
 02:03:42 | 20 - "git stash"
+    1 git stash
+    2 git stash pop
+    3 git stash apply
+    4 git stash list
+    5 git stash drop <stash>
+    6 git stash clear
 
 02:10:11 | 21 - Reintegración de ramas en Git
+    1 git diff <nombre_rama_a_reintegrar>
+    2 git merge <nombre_rama_a_reintegrar>
 
 02:16:26 | 22 - Eliminación de ramas en Git
 
