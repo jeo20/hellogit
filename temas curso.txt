@@ -129,12 +129,12 @@ LECCIONES DEL CURSO:
     1 git checkout <hash>
     2 git checkout HEAD -- .
 
-01:19:31 | 15 - "git reset --hard" y "git reflog"
+01:19:31 | 15 - "git reset --hard" y "git reflog" (Reset y log de referencias )
     1 git reset --hard
     2 git reset --hard <hash>
     3 git reflog
 
-01:27:37 | 16 - "git tag"
+01:27:37 | 16 - "git tag" (Etiquetas)
     1 git tag
     2 git tag <nombre_tag>
     3 git tag <nombre_tag> <hash_commit>
@@ -142,8 +142,13 @@ LECCIONES DEL CURSO:
     5 git checkout <nombre_tag>
     6 git tag -d <nombre_tag>
 
-01:37:36 | 17 - "git branch" y "git switch"
-
+01:37:36 | 17 - "git branch" y "git switch" (Creación de ramas)
+    1 git branch
+    2 git branch <nombre_rama>
+    3 git switch <nombre_rama>
+    4 git checkout -b <nombre_rama>
+    5 git switch -c <nombre_rama>
+    
 01:49:06 | 18 - "git merge"
 
 01:54:29 | 19 - Resolución de conflictos en Git
