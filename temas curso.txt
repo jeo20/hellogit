@@ -149,7 +149,8 @@ LECCIONES DEL CURSO:
     4 git checkout -b <nombre_rama>
     5 git switch -c <nombre_rama>
     
-01:49:06 | 18 - "git merge"
+01:49:06 | 18 - "git merge"(Combinación de ramas)
+    1 git merge <nombre_rama>
 
 01:54:29 | 19 - Resolución de conflictos en Git
 
