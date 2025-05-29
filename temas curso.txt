@@ -194,8 +194,12 @@ LECCIONES DEL CURSO:
 03:07:19 | 30 - Subida de un proyecto a GitHub
     1 git push
     2 git pull origin main
-    
+
 03:11:31 | 31 - "git fetch" y "git pull"
+    1 git fetch
+    2 git config pull.rebase false
+    3 git pull
+    
 03:16:41 | 32 - "git clone"
 03:19:55 | 33 - "git push"
 03:21:31 | 34 - "Fork" en GitHub
