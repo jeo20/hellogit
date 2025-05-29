@@ -170,6 +170,8 @@ LECCIONES DEL CURSO:
     2 git merge <nombre_rama_a_reintegrar>
 
 02:16:26 | 22 - Eliminación de ramas en Git
+    1 git branch --delete <nombre_rama>
+    2 git branch -d <nombre_rama>
 
 02:22:27 | 23 - Introducción a GitHub
 02:27:53 | 24 - Primeros pasos en GitHub
