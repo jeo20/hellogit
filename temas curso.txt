@@ -2,7 +2,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/jeo20/git-moure.git
+git remote add origin https://github.com/jeo20/hellogit.git
 git push -u origin main
 
 
@@ -174,12 +174,23 @@ LECCIONES DEL CURSO:
     2 git branch -d <nombre_rama>
 
 02:22:27 | 23 - Introducción a GitHub
+
 02:27:53 | 24 - Primeros pasos en GitHub
+
 02:30:39 | 25 - Repositorio personal
+
 02:42:40 | 26 - Local y Remoto
+
 02:47:32 | 27 - Autenticación SSH en GitHub
+    https://docs.github.com/es/authentication/connecting-to-github-with-ssh
+
 03:00:45 | 28 - Repositorio proyecto
-03:02:29 | 29 - "git remote"
+
+03:02:29 | 29 - "git remote"   
+    1 git remote add origin git@github.com:<usuario_githu\
+    2 b>/<nombre_repositorio>.git
+    3 git push -u origin <rama_principal>
+
 03:07:19 | 30 - Subida de un proyecto a GitHub
 03:11:31 | 31 - "git fetch" y "git pull"
 03:16:41 | 32 - "git clone"
